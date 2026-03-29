@@ -1,0 +1,58 @@
+@use '../../colors' as colors;
+@use '../../typography.scss' as typography;
+
+.categoryItem {
+    width: 100px;
+    height: 81px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 22px;
+    padding: 22px 0;
+    user-select: none;
+    cursor: pointer;
+    &:hover {
+        .categoryTitle {
+            color: colors.$thubnail-accent;
+        }
+    }
+    background-color: colors.$thubnail-bg;
+}
+
+.categoryItem.outOfStock{
+    opacity: .5;
+    pointer-events: none;
+}
+
+.categoryItem.selected .categoryTitle{
+    color: colors.$thubnail-accent;
+}
+
+.categoryThubnail {
+    width: 44px;
+    height: 30px;
+    background-color: #D9D9D9;
+}
+
+.categoryTitle {
+    @include typography.menuitem;
+    color: colors.$thubnail-text;
+    width: 78px;
+    padding: 0 11px;
+    text-wrap-mode: nowrap;
+}
+
+.categoryItem.selected {
+    background-color: colors.$thubnail-bgSelected;
+    box-shadow: inset 0 0 0 2px colors.$thubnail-stroke,
+                inset 0 0 0 4px colors.$thubnail-bg;
+    color: colors.$thubnail-accent;
+}
+
+.categoryItem.selected:hover {
+    box-shadow: inset 0 0 0 2px colors.$thubnail-stroke,
+                inset 0 0 0 4px colors.$thubnail-bg,
+                0 0 20px colors.$thubnail-shadowSelected;
+}

@@ -1,0 +1,79 @@
+@use '../../colors' as colors;
+@use '../../typography.scss' as typography;
+
+content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex: 1;
+    padding: 30px 390px 30px 180px;
+    overflow-x: hidden;
+}
+
+h1{
+    @include typography.h1;
+    color: colors.$title;
+}
+
+h2{
+    @include typography.h2;
+    color: colors.$title;
+}
+
+.items{
+    display: grid;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.titleContainer{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+}
+
+.categories {
+    display: flex;
+    overflow-x: auto;
+}
+
+.categoriesContainer {
+    display: flex;
+    gap: 24px;
+}
+
+.results {
+    display: flex;
+    justify-content: space-between;
+    align-items:baseline;
+}
+
+.quantityString {
+    @include typography.secondary;
+    color: colors.$info;
+}
+
+@media (max-width: 1435px) {
+    .items{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (min-width: 1436px) and (max-width: 1864px) {
+    .items{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1865px) and (max-width: 2294px) {
+    .items{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 2295px) {
+    .items{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

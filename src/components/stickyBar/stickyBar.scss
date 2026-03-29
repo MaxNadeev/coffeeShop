@@ -1,0 +1,8 @@
+@use '../../colors' as colors;
+@use '../../typography.scss' as typography;
+
+.stickyBar {
+    background-color: aqua;
+    padding:22px;
+    border-radius: 22px;
+}

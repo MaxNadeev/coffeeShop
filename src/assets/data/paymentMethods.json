@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "СБП",
+    "icon_default": "sbpOutline",
+    "icon_accent": "sbpFill",
+    "description": "Оплата через систему быстрых платежей"
+  },
+  {
+    "id": 2,
+    "title": "Картой",
+    "icon_default": "cardOutline",
+    "icon_accent": "cardFill",
+    "description": "Оплата банковской картой"
+  },
+  {
+    "id": 3,
+    "title": "Наличкой",
+    "icon_default": "cashOutline",
+    "icon_accent": "cashFill",
+    "description": "Оплата наличными"
+  }
+]

@@ -1,0 +1,26 @@
+[
+    {
+      "id": 1,
+      "title": "Главная",
+      "route": "/",
+      "icon_default": "homeOutline",
+      "icon_accent": "homeFill",
+      "icon": "home"
+    },
+    {
+      "id": 2,
+      "title": "Меню",
+      "route": "/menu",
+      "icon_default": "menuOutline",
+      "icon_accent": "menuFill",
+      "icon": "range"
+    },
+    {
+      "id": 3,
+      "title": "Акции",
+      "route": "/offers",
+      "icon_default": "fireOutline",
+      "icon_accent": "fireFill",
+      "icon": "fire"
+    }
+]

@@ -1,0 +1,38 @@
+@use '../../colors' as colors;
+@use '../../typography.scss' as typography;
+
+.option-button {
+    border-radius: 22px;
+    background-color: colors.$card-option-bg;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.option-button.selected {
+    color: colors.$thubnail-accent;
+}
+
+.option-button:hover {
+    box-shadow: inset 0 0 0 2px colors.$card-option-stroke,
+                inset 0 0 0 4px colors.$card-option-bgSelection;
+}
+
+.option-button.selected {
+    box-shadow: inset 0 0 0 2px colors.$card-option-stroke,
+                inset 0 0 0 4px colors.$card-option-bgSelection;
+}
+
+.option-button.selected:hover {
+    box-shadow: inset 0 0 0 2px colors.$card-option-stroke,
+                inset 0 0 0 4px colors.$card-option-bgSelection,
+                0 0 20px colors.$card-option-shadowSelected;
+}
+
+.icon {
+    width: 26px;
+    height: 26px;
+}

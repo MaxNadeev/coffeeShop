@@ -1,0 +1,704 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "title": "Кофе",
+      "thubnail": "#",
+      "image": "#",
+      "resultsTitle": "Кофейная карта",
+      "description": "Описание Кофе"
+    },
+    {
+      "id": 2,
+      "title": "Чай",
+      "thubnail": "#",
+      "image": "#",
+      "resultsTitle": "Чайная карта",
+      "description": "Описание Чая"
+    },
+    {
+      "id": 3,
+      "title": "Какао",
+      "thubnail": "#",
+      "image": "#",
+      "resultsTitle": "Карта какао",
+      "description": "Описание Какао"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "category": 1,
+      "title": "Шоколадный Фрапучино",
+      "image": "#",
+      "description": "Сладкий шоколад, кофе, молоко, и взбитые сливки",
+      "price": 345.99,
+      "optionsGroup": {
+        "moods": {
+          "name": "Настроение",
+          "basic": true,
+          "options":{
+            "required": true,
+            "values": ["классика", "холодный"],
+            "associated": ["temperature", "ice"],
+            "selected": 0
+          }
+        },
+        "sizes": {
+          "name": "Размер",
+          "basic": true,
+          "options":{
+            "required": true,
+            "values": ["S", "M", "L"],
+            "selected": 1
+          }
+        },
+        "sugar": {
+          "name": "Сахар",
+          "basic": true,
+          "options":{
+            "required": false,
+            "values": ["немного сахара", "с сахаром", "побольше сахара"],
+            "selected": null
+          }
+        },
+        "temperature": {
+          "name": "Температура",
+          "basic": false,
+          "options":{
+            "required": true,
+            "values": ["теплый", "горячий", "погорячее"],
+            "selected": 1
+          }
+        },
+        "ice": {
+          "name": "Лёд",
+          "basic": false,
+          "options":{
+            "required": false,
+            "values": ["немного льда", "со льдом", "побольше льда"],
+            "selected": null
+          }
+        }
+      }
+    },
+    {
+      "id": 2,
+      "category": 1,
+      "title": "Капучино",
+      "image": "#",
+      "description": "Насыщенный чёрный кофе с молочной пенкой, взбитой до шелковистой нежности. Идеальный баланс кофе и молока.",
+      "price": 300,
+      "optionsGroup": {
+        "moods": {
+          "name": "Настроение",
+          "basic": true,
+          "options":{
+            "required": true,
+            "values": ["классика", "холодный"],
+            "associated": ["temperature", "ice"],
+            "selected": 0
+          }
+        },
+        "sizes": {
+          "name": "Размер",
+          "basic": true,
+          "options":{
+            "required": true,
+            "values": ["S", "M", "L"],
+            "selected": 1
+          }
+        },
+        "sugar": {
+          "name": "Сахар",
+          "basic": true,
+          "options":{
+            "required": false,
+            "values": ["немного сахара", "с сахаром", "побольше сахара"],
+            "selected": null
+          }
+        },
+        "temperature": {
+          "name": "Температура",
+          "basic": false,
+          "options":{
+            "required": true,
+            "values": ["теплый", "горячий", "погорячее"],
+            "selected": 1
+          }
+        },
+        "ice": {
+          "name": "Лёд",
+          "basic": false,
+          "options":{
+            "required": false,
+            "values": ["немного льда", "со льдом", "побольше льда"],
+            "selected": null
+          }
+        }
+      }
+    },
+    {
+      "id": 3,
+      "category": 1,
+      "title": "Ванильный раф",
+      "image": "#",
+      "description": "Густой, нежный и бархатистый напиток на основе крепкого эспрессо, взбитых со сливками до воздушной пены и сдобренный душистым ванильным сиропом. Подается горячим или охлаждённым, украшенный тонкими нотками корицы, тертым шоколадом или золотистыми карамельными нитями.",
+      "price": 300,
+      "optionsGroup": {
+        "moods": {
+          "name": "Настроение",
+          "basic": true,
+          "options":{
+            "required": true,
+            "values": ["классика"],
+            "associated": ["temperature"],
+            "selected": 0
+          }
+        },
+        "sizes": {
+          "name": "Размер",
+          "basic": true,
+          "options":{
+            "required": true,
+            "values": ["S", "M", "L"],
+            "selected": 1
+          }
+        },
+        "sugar": {
+          "name": "Сахар",
+          "basic": true,
+          "options":{
+            "required": false,
+            "values": ["немного сахара", "с сахаром", "побольше сахара"],
+            "selected": null
+          }
+        },
+        "temperature": {
+          "name": "Температура",
+          "basic": false,
+          "options":{
+            "required": true,
+            "values": ["теплый", "горячий", "погорячее"],
+            "selected": 1
+          }
+        }
+      }
+    },
+    {
+      "id": 4,
+      "category": 2,
+      "title": "Чёрный чай с мёдом",
+      "image": "#",
+      "description": "Чёрный Ассам, Алтайский мёд, лимонная цедра, имбирь тёртый, гвоздика молотая, корица",
+      "price": 290,
+      "optionsGroup": {
+        "moods": {
+          "name": "Настроение",
+          "basic": true,
+          "options":{
+            "required": true,
+            "values": ["классика", "холодный"],
+            "associated": ["temperature", "ice"],
+            "selected": 0
+          }
+        },
+        "sizes": {
+          "name": "Размер",
+          "basic": true,
+          "options":{
+            "required": true,
+            "values": ["S", "M", "L"],
+            "selected": 1
+          }
+        },
+        "sugar": {
+          "name": "Сахар",
+          "basic": true,
+          "options":{
+            "required": false,
+            "values": ["немного сахара", "с сахаром", "побольше сахара"],
+            "selected": null
+          }
+        },
+        "temperature": {
+          "name": "Температура",
+          "basic": false,
+          "options":{
+            "required": true,
+            "values": ["теплый", "горячий", "погорячее"],
+            "selected": 1
+          }
+        },
+        "ice": {
+          "name": "Лёд",
+          "basic": false,
+          "options":{
+            "required": false,
+            "values": ["немного льда", "со льдом", "побольше льда"],
+            "selected": null
+          }
+        }
+      }
+    },
+    {
+      "id": 5,
+      "category": 2,
+      "title": "Манго-маракуйя улун",
+      "image": "#",
+      "description": "Ослепительно-солнечный китайский улун, томно вобравший в себя сок спелого манго и терпкую кислинку экзотической маракуйи. Шёлковый, с фруктовым томным послевкусием, которое дарит ощущение тропического рая в каждой чашке.",
+      "price": 350,
+      "optionsGroup": {
+        "moods": {
+          "name": "Настроение",
+          "basic": true,
+          "options": {
+            "required": true,
+            "values": ["классика", "холодный"],
+            "associated": ["temperature", "ice"],
+            "selected": 0
+          }
+        },
+        "sizes": {
+          "name": "Размер",
+          "basic": true,
+          "options": {
+            "required": true,
+            "values": ["S", "M", "L"],
+            "selected": 1
+          }
+        },
+        "sugar": {
+          "name": "Сахар",
+          "basic": true,
+          "options": {
+            "required": false,
+            "values": ["немного сахара", "с сахаром", "побольше сахара"],
+            "selected": null
+          }
+        },
+        "temperature": {
+          "name": "Температура",
+          "basic": false,
+          "options": {
+            "required": true,
+            "values": ["теплый", "горячий", "погорячее"],
+            "selected": 1
+          }
+        },
+        "ice": {
+          "name": "Лёд",
+          "basic": false,
+          "options": {
+            "required": false,
+            "values": ["немного льда", "со льдом", "побольше льда"],
+            "selected": null
+          }
+        }
+      }
+    },
+    {
+      "id": 6,
+      "category": 2,
+      "title": "Лесная земляника с мятой",
+      "image": "#",
+      "description": "Игривый зелёный чай, переплетённый с сочными, будто только что сорванными ягодами лесной земляники и прохладным дыханием мяты. Невероятно освежающий, ягодно-травянистый настой с долгим, сладковатым финишем, напоминающий о тёплом лете.",
+      "price": 310,
+      "optionsGroup": {
+        "moods": {
+          "name": "Настроение",
+          "basic": true,
+          "options": {
+            "required": true,
+            "values": ["классика", "холодный"],
+            "associated": ["temperature", "ice"],
+            "selected": 0
+          }
+        },
+        "sizes": {
+          "name": "Размер",
+          "basic": true,
+          "options": {
+            "required": true,
+            "values": ["S", "M", "L"],
+            "selected": 1
+          }
+        },
+        "sugar": {
+          "name": "Сахар",
+          "basic": true,
+          "options": {
+            "required": false,
+            "values": ["немного сахара", "с сахаром", "побольше сахара"],
+            "selected": null
+          }
+        },
+        "temperature": {
+          "name": "Температура",
+          "basic": false,
+          "options": {
+            "required": true,
+            "values": ["теплый", "горячий", "погорячее"],
+            "selected": 1
+          }
+        },
+        "ice": {
+          "name": "Лёд",
+          "basic": false,
+          "options": {
+            "required": false,
+            "values": ["немного льда", "со льдом", "побольше льда"],
+            "selected": null
+          }
+        }
+      }
+    },
+    {
+      "id": 7,
+      "category": 2,
+      "title": "Каркаде шиповник имбирь",
+      "image": "#",
+      "description": "Багряный, как закат, настой из лепестков суданской розы, усиленный мощью дикого шиповника и жгучим характером корня имбиря. Кисло-сладкий, пряный, согревающий изнутри эликсир бодрости и кладезь витаминов для твоего иммунитета.",
+      "price": 270,
+      "optionsGroup": {
+        "moods": {
+          "name": "Настроение",
+          "basic": true,
+          "options": {
+            "required": true,
+            "values": ["классика", "холодный"],
+            "associated": ["temperature", "ice"],
+            "selected": 0
+          }
+        },
+        "sizes": {
+          "name": "Размер",
+          "basic": true,
+          "options": {
+            "required": true,
+            "values": ["S", "M", "L"],
+            "selected": 1
+          }
+        },
+        "sugar": {
+          "name": "Сахар",
+          "basic": true,
+          "options": {
+            "required": false,
+            "values": ["немного сахара", "с сахаром", "побольше сахара"],
+            "selected": null
+          }
+        },
+        "temperature": {
+          "name": "Температура",
+          "basic": false,
+          "options": {
+            "required": true,
+            "values": ["теплый", "горячий", "погорячее"],
+            "selected": 1
+          }
+        },
+        "ice": {
+          "name": "Лёд",
+          "basic": false,
+          "options": {
+            "required": false,
+            "values": ["немного льда", "со льдом", "побольше льда"],
+            "selected": null
+          }
+        }
+      }
+    },
+    {
+      "id": 8,
+      "category": 2,
+      "title": "Кремовый Ройбуш ваниль",
+      "image": "#",
+      "description": "Нежнейший южноафриканский ройбуш, прошедший ферментацию до состояния орехово-карамельного великолепия, смешанный с маслянистыми нотками бурбона и сладкой, как поцелуй, ванилью. Абсолютно бескофеиновый, обволакивающий напиток для уютных вечеров.",
+      "price": 330,
+      "optionsGroup": {
+        "moods": {
+          "name": "Настроение",
+          "basic": true,
+          "options": {
+            "required": true,
+            "values": ["классика"],
+            "associated": [],
+            "selected": 0
+          }
+        },
+        "sizes": {
+          "name": "Размер",
+          "basic": true,
+          "options": {
+            "required": true,
+            "values": ["S", "M", "L"],
+            "selected": 1
+          }
+        },
+        "sugar": {
+          "name": "Сахар",
+          "basic": true,
+          "options": {
+            "required": false,
+            "values": ["немного сахара", "с сахаром", "побольше сахара"],
+            "selected": null
+          }
+        },
+        "temperature": {
+          "name": "Температура",
+          "basic": false,
+          "options": {
+            "required": true,
+            "values": ["теплый", "горячий", "погорячее"],
+            "selected": 1
+          }
+        }
+      }
+    },
+    {
+      "id": 9,
+      "category": 2,
+      "title": "Шу Пуэр с фиником и грецким орехом",
+      "image": "#",
+      "description": "Древний, выдержанный Шу Пуэр, чей землисто-шоколадный вкус обласкан сладостью вяленого финика и маслянистой горчинкой карамелизированного грецкого ореха. Глубокий, бархатистый, с плотным телом и долгим, тёплым, согревающим финишем, как уютный вечер у камина.",
+      "price": 390,
+      "optionsGroup": {
+        "moods": {
+          "name": "Настроение",
+          "basic": true,
+          "options": {
+            "required": true,
+            "values": ["классика"],
+            "associated": [],
+            "selected": 0
+          }
+        },
+        "sizes": {
+          "name": "Размер",
+          "basic": true,
+          "options": {
+            "required": true,
+            "values": ["S", "M", "L"],
+            "selected": 1
+          }
+        },
+        "sugar": {
+          "name": "Сахар",
+          "basic": true,
+          "options": {
+            "required": false,
+            "values": ["немного сахара", "с сахаром", "побольше сахара"],
+            "selected": null
+          }
+        },
+        "temperature": {
+          "name": "Температура",
+          "basic": false,
+          "options": {
+            "required": true,
+            "values": ["теплый", "горячий", "погорячее"],
+            "selected": 1
+          }
+        }
+      }
+    },
+    {
+      "id": 10,
+      "category": 1,
+      "title": "Фильтр кофе",
+      "image": "#",
+      "description": "Честный, медленный, дышащий кофе из керамического воронки. Односортная арабика из Эфиопии раскрывается нотами спелой черники, жасмина и цукатов. Прозрачный, как горный ручей, с шелковистым телом и долгим, ягодным послевкусием. Кофе для настоящего ритуала.",
+      "price": 280,
+      "optionsGroup": {
+        "moods": {
+          "name": "Настроение",
+          "basic": true,
+          "options": {
+            "required": true,
+            "values": ["классика"],
+            "associated": [],
+            "selected": 0
+          }
+        },
+        "sizes": {
+          "name": "Размер",
+          "basic": true,
+          "options": {
+            "required": true,
+            "values": ["S", "M", "L"],
+            "selected": 1
+          }
+        },
+        "sugar": {
+          "name": "Сахар",
+          "basic": true,
+          "options": {
+            "required": false,
+            "values": ["немного сахара", "с сахаром", "побольше сахара"],
+            "selected": null
+          }
+        },
+        "temperature": {
+          "name": "Температура",
+          "basic": false,
+          "options": {
+            "required": true,
+            "values": ["теплый", "горячий", "погорячее"],
+            "selected": 1
+          }
+        }
+      }
+    },
+    {
+      "id": 11,
+      "category": 1,
+      "title": "Лавандовый раф",
+      "image": "#",
+      "description": "Томный, успокаивающий и невероятно нежный напиток. Крепкий эспрессо, воздушные сливки и бархатистая пенка, в которую вмешан сироп фиолетовой лаванды. Цветочно-кремовый, с ароматом прованского луга и долгим, сладковато-травянистым финишем.",
+      "price": 340,
+      "optionsGroup": {
+        "moods": {
+          "name": "Настроение",
+          "basic": true,
+          "options": {
+            "required": true,
+            "values": ["классика"],
+            "associated": [],
+            "selected": 0
+          }
+        },
+        "sizes": {
+          "name": "Размер",
+          "basic": true,
+          "options": {
+            "required": true,
+            "values": ["S", "M", "L"],
+            "selected": 1
+          }
+        },
+        "sugar": {
+          "name": "Сахар",
+          "basic": true,
+          "options": {
+            "required": false,
+            "values": ["немного сахара", "с сахаром", "побольше сахара"],
+            "selected": null
+          }
+        },
+        "temperature": {
+          "name": "Температура",
+          "basic": false,
+          "options": {
+            "required": true,
+            "values": ["теплый", "горячий", "погорячее"],
+            "selected": 1
+          }
+        }
+      }
+    },
+    {
+      "id": 12,
+      "category": 1,
+      "title": "Флэт Уайт",
+      "image": "#",
+      "description": "Австралийская гордость: двойная порция эспрессо, утопленная в микро-пенке из самого жирного молока. Вкус — мощный, шоколадно-ореховый, с плотным телом, но при этом шёлковый, как прикосновение. Никакой пены — только кофе и нежность.",
+      "price": 320,
+      "optionsGroup": {
+        "moods": {
+          "name": "Настроение",
+          "basic": true,
+          "options": {
+            "required": true,
+            "values": ["классика"],
+            "associated": [],
+            "selected": 0
+          }
+        },
+        "sizes": {
+          "name": "Размер",
+          "basic": true,
+          "options": {
+            "required": true,
+            "values": ["S", "M"],
+            "selected": 0
+          }
+        },
+        "sugar": {
+          "name": "Сахар",
+          "basic": true,
+          "options": {
+            "required": false,
+            "values": ["немного сахара", "с сахаром", "побольше сахара"],
+            "selected": null
+          }
+        },
+        "temperature": {
+          "name": "Температура",
+          "basic": false,
+          "options": {
+            "required": true,
+            "values": ["теплый", "горячий"],
+            "selected": 1
+          }
+        }
+      }
+    },
+    {
+      "id": 13,
+      "category": 1,
+      "title": "Моккачино",
+      "image": "#",
+      "description": "Десерт в чашке: шоколадный соус, карамельный эспрессо, нежнейшее молоко и шапка взбитых сливок, посыпанная какао. Густой, сладкий, с нотами растопленного шоколада и зефирной нежности. Не напиток, а удовольствие ложкой.",
+      "price": 360,
+      "optionsGroup": {
+        "moods": {
+          "name": "Настроение",
+          "basic": true,
+          "options": {
+            "required": true,
+            "values": ["классика", "холодный"],
+            "associated": ["temperature", "ice"],
+            "selected": 0
+          }
+        },
+        "sizes": {
+          "name": "Размер",
+          "basic": true,
+          "options": {
+            "required": true,
+            "values": ["S", "M", "L"],
+            "selected": 1
+          }
+        },
+        "sugar": {
+          "name": "Сахар",
+          "basic": true,
+          "options": {
+            "required": false,
+            "values": ["немного сахара", "с сахаром", "побольше сахара"],
+            "selected": null
+          }
+        },
+        "temperature": {
+          "name": "Температура",
+          "basic": false,
+          "options": {
+            "required": true,
+            "values": ["теплый", "горячий", "погорячее"],
+            "selected": 1
+          }
+        },
+        "ice": {
+          "name": "Лёд",
+          "basic": false,
+          "options": {
+            "required": false,
+            "values": ["немного льда", "со льдом", "побольше льда"],
+            "selected": null
+          }
+        }
+      }
+    }
+  ]
+}

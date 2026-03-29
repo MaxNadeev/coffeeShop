@@ -1,0 +1,290 @@
+@use "./colors.scss" as *;
+
+$main: "Century Gothic";
+$currency: "Helvetica";
+
+@mixin icon-btn-letter {
+    color: $button-icon-letter; 
+    font-family: Arimo;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+@mixin icon-btn-value {
+    font-family: $main;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+}
+
+@mixin icon-btn-percent {
+    font-family: $main;
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+@mixin card-caption {
+    font-family: $main;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+@mixin card-description {
+    font-family: $main;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+@mixin card-price-value {
+    font-family: $main;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+@mixin card-price-currency {
+    font-feature-settings: 'sups' on;
+    font-family: $currency;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+}
+
+@mixin button-in-cart {
+    text-align: center;
+    text-overflow: ellipsis;
+    font-family: $main;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+@mixin category-thubnail {
+    text-align: center;
+    font-family: $main;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+@mixin h2 {
+    font-size: 26px;
+    font-style: normal;
+    font-family: $main;
+    font-weight: 700;
+    line-height: normal;
+}
+
+@mixin h1 {
+    font-size: 31px;
+    font-style: normal;
+    font-family: $main;
+    font-weight: 700;
+    line-height: normal;
+}
+
+@mixin search {
+    overflow: hidden;
+    font-family: $main;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+@mixin menuitem {
+    text-align: center;
+    font-family: $main;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+@mixin secondary {
+    text-align: right;
+    font-family: $main;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+@mixin uStatus {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: $main;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+@mixin uName {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    font-family: $main;
+}
+
+@mixin item-caption {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+@mixin bill-parameters{
+    font-family: $main;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+
+@mixin item-amount {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+@mixin item-price-value {
+    text-align: right;
+    font-family: $main;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+@mixin item-price-currency {
+    font-feature-settings: "sups" on;
+    font-family: "Helvetica";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 167%;
+}
+
+@mixin h3 {
+    font-size: 22px;
+    font-family: $main;
+    font-weight: 400;
+}
+
+@mixin small-btn {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: $main;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+@mixin h5 {
+    font-family: $main;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+@mixin h5-currency {
+    font-feature-settings: 'sups' on;
+    font-family: $currency;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 135%;
+}
+
+@mixin loyalty-title {
+    font-family: $main;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+@mixin loyalty-value {
+    text-align: right;
+    font-family: $main;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+// @mixin loyalty-curency {
+//     font-feature-settings: 'sups' on;
+//     font-family: $currency;
+//     font-size: 15px;
+//     font-style: normal;
+//     font-weight: 700;
+//     line-height: 120%; /* 18px */
+// }
+
+@mixin h4 {
+    font-family: $main;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+@mixin h4-currency {
+    font-feature-settings: 'sups' on;
+    font-family: $currency;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 22.8px */
+}
+
+@mixin paymentOption {
+    font-family: $main;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+@mixin payButton {
+    overflow: hidden;
+    color: $button-text;
+    text-align: center;
+    text-overflow: ellipsis;
+    font-family: "Century Gothic";
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+@mixin payButtonCurrency {
+    font-family: "Helvetica";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+}

@@ -1,0 +1,102 @@
+@use '../../colors' as colors;
+@use '../../typography.scss' as typography;
+
+.card {
+    position: relative; // Добавляем для позиционирования
+    display: flex;
+    min-width: 325px;
+    padding: 30px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    border-radius: 22px;
+    background: colors.$card-bg;    
+}
+
+.cardImage {
+    width: 138px;
+    height: 155px;
+    border-radius: 22px;
+    background: #D9D9D9;
+}
+
+.title {
+    color: colors.$card-caption;
+    @include typography.card-caption;
+    display: -webkit-box;       /* Старый способ для совместимости */
+    display: -moz-box;          /* Для Firefox */
+    display: box;              /* Современный способ */
+    -webkit-line-clamp: 2;      /* Ограничение в 2 строки */
+    -moz-line-clamp: 2;         /* Для Firefox (если поддерживается) */
+    line-clamp: 2;             /* Будущий стандарт */
+    -webkit-box-orient: vertical; /* Направление контейнера */
+    -moz-box-orient: vertical;    /* Для Firefox */
+    box-orient: vertical;       /* Направление контейнера */
+    overflow: hidden;          /* Скрываем лишнее */
+    text-overflow: ellipsis;   /* Добавляем многоточие */
+    white-space: normal;       /* Разрешаем перенос строк */
+    word-wrap: break-word;     /* Перенос длинных слов */
+}
+
+.cardTitle{
+    height: 52px;
+}
+
+.description {
+    color: colors.$card-description;
+    @include typography.card-description;
+    display: -webkit-box;       /* Старый способ для совместимости */
+    display: -moz-box;          /* Для Firefox */
+    display: box;              /* Современный способ */
+    -webkit-line-clamp: 2;      /* Ограничение в 2 строки */
+    -moz-line-clamp: 2;         /* Для Firefox (если поддерживается) */
+    line-clamp: 2;             /* Будущий стандарт */
+    -webkit-box-orient: vertical; /* Направление контейнера */
+    -moz-box-orient: vertical;    /* Для Firefox */
+    box-orient: vertical;       /* Направление контейнера */
+    overflow: hidden;          /* Скрываем лишнее */
+    text-overflow: ellipsis;   /* Добавляем многоточие */
+    white-space: normal;       /* Разрешаем перенос строк */
+    word-wrap: break-word;     /* Перенос длинных слов */
+    height: 38px;
+}
+
+.price {
+    display: flex;
+    align-items: flex-start;
+    gap: 4px;
+}
+
+.price-value, .price-currency {
+    color: colors.$card-price;
+}
+
+.price-currency {
+    @include typography.card-price-currency;
+}
+
+.price-value {
+    @include typography.card-price-value;
+}
+
+.main-info{
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.description-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 18px;
+}
+
+.optionsGroup {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    align-self: stretch;
+}
+

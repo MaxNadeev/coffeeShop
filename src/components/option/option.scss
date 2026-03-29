@@ -1,0 +1,19 @@
+@use '../../colors' as colors;
+@use '../../typography.scss' as typography;
+
+.option {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.option-name {
+    color: colors.$card-caption;
+    @include typography.card-caption;
+}
+
+.option-button-group {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+}

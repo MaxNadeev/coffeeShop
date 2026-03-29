@@ -1,0 +1,57 @@
+@use '../../colors' as colors;
+@use '../../typography.scss' as typography;
+
+
+.paymentWrapper {
+    width: 100%;
+}
+
+.paymentWidget {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.paymentMethods {
+    display: flex;
+    gap: 12px;
+}
+
+.payButton {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px 0;
+    width: 100%;
+    background-color: colors.$button-bg;
+    color: colors.$button-text;
+    box-shadow: inset 0 0 0 2px colors.$button-stroke;
+    border-radius: 12px;
+}
+
+.payButton > .payCurrency{
+    @include typography.payButtonCurrency;
+}
+
+.base-Button {
+    background-color: colors.$button-bg;
+    color: colors.$button-text;
+    box-shadow: inset 0 0 0 2px colors.$button-stroke;
+    
+}
+
+.base-Button:hover {
+    background-color: colors.$button-stroke;
+}
+
+.base-Button:active {
+    color: colors.$button-bg;
+    background-color: colors.$button-bg-secondary;
+    box-shadow: inset 0 0 0 2px colors.$button-stroke,
+    inset 0 0 0 4px colors.$button-text;
+}
+
+.payButton{
+    @include typography.payButton;
+}

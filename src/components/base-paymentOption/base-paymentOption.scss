@@ -1,0 +1,56 @@
+@use '../../colors' as colors;
+@use '../../typography.scss' as typography;
+
+.paymentOption {
+    flex: 1;
+    height: 90px;
+    border-radius: 16px;
+    user-select: none;
+    background-color: colors.$bill-pay-bg;
+    &:hover {
+        .paymentOption-title {
+            color: colors.$menu-accent;
+        }
+    }
+    &.selected {
+        .paymentOption-title {
+            color: colors.$menu-accent;
+        }
+    }
+
+}
+
+.paymentOption:hover {
+    cursor: pointer;
+}
+
+.paymentOption.selected {
+    color: colors.$bill-pay-accent;
+    box-shadow: inset 0 0 0 2px colors.$bill-pay-main,
+                inset 0 0 0 4px colors.$bill-pay-bg-secondary;
+}
+
+.paymentOption.selected:hover {
+    box-shadow: inset 0 0 0 2px colors.$thubnail-stroke,
+                inset 0 0 0 4px colors.$thubnail-bg,
+                0 0 20px colors.$thubnail-shadowSelected;
+}
+
+.paymentOption-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 18px 0;
+    width: 100%;
+}
+
+.paymentOption-icon {
+    width: 34px;
+    height: 34px;
+}
+
+.paymentOption-title {
+    @include typography.paymentOption;
+    color: colors.$menu-main;
+}

@@ -1,0 +1,59 @@
+@use '../../colors' as colors;
+@use '../../typography.scss' as typography;
+
+.uWidget {
+    display: flex;
+    width: 100%;
+    box-shadow: 0 0 30px colors.$uShadow;
+    background-color: colors.$uBg;
+    border-radius: 0 0 22px 22px;
+    cursor: pointer;
+}
+
+.uWidget:hover {
+    box-shadow: 0 0 30px colors.$uShadow-hover;
+}
+
+.uContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    width: 100%;
+    padding: 30px;
+}
+
+.uThubnail {
+    background-color: #d9d9d9;
+    width: 71px;
+    height: 71px;
+    border-radius: 16px;
+}
+
+.uInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.uStatus {
+    color: colors.$uStatus;
+    @include typography.uStatus;
+    max-width: 210px;
+}
+
+.uName {
+    color: colors.$title;
+    @include typography.uName;
+}
+
+.uNotificationButton {
+    height: 100%;
+    align-content: center;
+}
+
+.uNotificationIcon {
+    width: 26px;
+    height: 26px;
+}

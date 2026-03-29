@@ -1,0 +1,201 @@
+@use '../../colors' as colors;
+@use '../../typography.scss' as typography;
+
+.cartWidget > .groupX{
+    gap: 6px;
+    margin-top: -7px;
+}
+
+h2{
+    @include typography.h2;
+    color: colors.$title;
+}
+
+.cartWidgetWrapper {
+    display: flex;
+    flex: 1;
+    margin: 30px;
+}
+
+.cartWidget {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.cartWidgetTitle {
+    padding-bottom: 22px;
+}
+
+.cartItemsWrapper {
+    display: flex;
+    // align-items: center;
+    flex-direction: column;
+    flex: 1;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    
+    // @include typography.noItemsPlaceholder;
+    // color: colors.$title;
+}
+
+.noItemsPlaceholder {
+    
+}
+
+.cartWidgetSummary{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    margin: 22px 0 0;
+}
+
+.cartWidgetPrice{
+    display: flex;
+    gap: 3px;
+}
+
+.cartWidgetSubtotal{
+    color: colors.$bill-caption;
+    display: flex;
+    justify-content: space-between;
+}
+
+h5{
+    @include typography.h5;
+}
+
+.cartWidgetSubtotalValue{
+    @include typography.h5;
+}
+
+.cartWidgetSubtotalCurrency{
+    @include typography.h5-currency;
+}
+
+.horisontalGroup{
+    display: flex;
+    align-items: baseline;
+    gap: 9px;
+}
+
+.cartWidgetLoyalty{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.cartWidgetLoyaltyTitle{
+    @include typography.loyalty-title;
+    color: colors.$bill-sub-caption;
+}
+
+// TOGGLE START
+
+// .collectSpend{
+
+// }
+
+// .toggle{
+//     display: flex;
+// }
+
+// // .toggle div:first-child{
+// //     border-radius: 7px 0 0 7px;
+// // }
+
+// // .toggle div:last-child{
+// //     border-radius: 0 7px 7px 0;
+    
+// // }
+
+// .toggleButton{
+//     border-radius: 7px;
+//     color: colors.$bill-pay-main;
+//     @include typography.card-description;
+//     padding: 5px 12px 5px 12px;
+// }
+
+// .toggleButton:hover{
+//     // color: colors.$bill-btn-text;
+//     color: colors.$bill-btn-text;
+//     cursor: pointer;
+// }
+
+// .toggleButton.active{
+//     color: colors.$bill-btn-text;
+//     background-color: colors.$bill-btn-bg;
+// }
+
+// .toggleButton.active:hover{
+
+// }
+
+// TOGGLE END
+
+.cartWidgetLoyaltyValue{
+    color: colors.$bill-sub-caption;
+    @include typography.loyalty-value;
+}
+
+.divider{
+    border-top: 4px dashed colors.$bill-divider;
+    width: 100%;
+}
+
+// .cartWidgetGrandTotal{
+//     display: flex;
+//     color: colors.$bill-caption;
+// }
+
+// h4{
+//     @include typography.h4;
+//     color: colors.$bill-caption;
+// }
+
+// .cartWidgetGrandTotalValue{
+//     @include typography.h4;
+// }
+
+// .cartWidgetGrandTotalCurrency{
+//     @include typography.h4-currency;
+// }
+
+.notesButton{
+    @include typography.small-btn;
+    color: colors.$bill-btn-text;
+    background-color: colors.$bill-btn-bg;
+    border-radius: 7px;
+    height: 28px;
+    padding: 0 12px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin-top: 4px;
+
+    --icon-fill-color: #{colors.$menu-accent}; 
+    
+    svg {
+        height: 10px;
+        width: 10px;
+        path {
+            fill: var(--icon-fill-color);
+        }
+    }
+    
+    &:hover {
+        --icon-fill-color: #{colors.$menu-inverted};
+        color: colors.$bill-btn-bg;
+    }
+}
+
+.notesButton:hover{
+    background-color: colors.$bill-btn-bg-hover;
+    cursor: pointer;
+}
+
+.cartWidgetItemNotesButtonIcon{
+    height: 10px;
+    width:  10px;
+}
+
