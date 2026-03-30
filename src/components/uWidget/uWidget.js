@@ -16,7 +16,7 @@ var icons = {
 
 var uWidget = createElementByHTML(data);
 var uThubnailElement = uWidget.querySelector('.uThubnail');
-uThubnailElement.setAttribute('src', '#') ///////////////
+uThubnailElement.setAttribute('src', '/src/assets/testUser.jpg') /////////////// test data
 
 var uStatusElement = uWidget.querySelector('.uStatus');
 uStatusElement.innerText = "Ценитель кофе 🎯 ";
