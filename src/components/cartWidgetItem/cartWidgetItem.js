@@ -43,6 +43,13 @@ function createCartWidgetItem (item) {
 
         selectedValues.sort();
     })
+
+    var thubnailElement = cartWidgetItemElement.querySelector('.cartWidgetItemThubnail');
+    if (item.product.image) {
+        thubnailElement.src = `src/assets/item_photos/${item.product.image}`;
+    } else {
+        thubnailElement.src = `src/assets/item_photos/defaultThubnail.png`;
+    }
     
     var optionsElement = cartWidgetItemElement.querySelector('.cartWidgetItemOptions');
     optionsElement.innerHTML = `${selectedValues.join(', ')}`;
