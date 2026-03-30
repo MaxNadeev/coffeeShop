@@ -3,7 +3,7 @@
     {
       "id": 1,
       "title": "Кофе",
-      "thubnail": "#",
+      "thubnail": "Coffee.png",
       "image": "#",
       "resultsTitle": "Кофейная карта",
       "description": "Описание Кофе"
@@ -11,7 +11,7 @@
     {
       "id": 2,
       "title": "Чай",
-      "thubnail": "#",
+      "thubnail": "Tea.png",
       "image": "#",
       "resultsTitle": "Чайная карта",
       "description": "Описание Чая"
@@ -19,7 +19,7 @@
     {
       "id": 3,
       "title": "Какао",
-      "thubnail": "#",
+      "thubnail": "Cacao.png",
       "image": "#",
       "resultsTitle": "Карта какао",
       "description": "Описание Какао"

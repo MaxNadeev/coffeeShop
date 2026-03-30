@@ -9,7 +9,12 @@ function createCategoryItem (category) {
     titleElement.innerText = category.title;
 
     var thubnailElement = categoryElement.querySelector('.categoryThubnail');
-    thubnailElement.setAttribute("src", category.thubnail);
+    thubnailElement.setAttribute("src", `src/assets/item_photos/categories/${category.thubnail}`);
+
+    if (category.id == 0) {
+        thubnailElement.setAttribute("src", `src/assets/item_photos/categories/All.png`);
+    }
+
 
     if (!category.inStock && !category.id == 0) {
         categoryElement.classList.add('outOfStock');
