@@ -15,7 +15,7 @@
   },
   {
     "id": 3,
-    "title": "Наличкой",
+    "title": "На кассе",
     "icon_default": "cashOutline",
     "icon_accent": "cashFill",
     "description": "Оплата наличными"
