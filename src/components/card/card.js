@@ -15,7 +15,7 @@ function createCard(product) {
     titleElement.innerText = product.title; 
 
     var imageElement = card.querySelector(".cardImage");
-    imageElement.setAttribute("src", product.image); 
+    imageElement.setAttribute("src", `src/assets/item_photos/${product.image}`); 
 
     var descriptionElement = card.querySelector(".description");
     descriptionElement.innerText = product.description;
